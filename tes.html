@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimi No Nawa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s;
+      z-index: 1000;
+      height: 6%;
+    }
+
+    .navbar.scrolled {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar h1 {
+      font-size: 26px;
+      margin-left: 1%;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 34px;
+      margin-left:3%;
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .navbar ul li {
+      position: relative;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s;
+      font
+    }
+
+    .navbar ul li a:hover {
+      color: rgb(11, 137, 255);
+    }
+
+    .navbar ul li a:hover::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(11, 137, 255);
+    }
+
+    .content {
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(11, 137, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .slide {
+      width: 100%;
+      height: 1080px;
+      display: flex;
+    }
+
+    .slide .left {
+      width: 50%;
+      background-color: rgb(202, 223, 241);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .teks-slide{
+        padding-top: 5rem;
+        width: 100%;
+        height:230px;
+        background-color: rgb(202, 223, 241);
+    }
+
+    .teks-slide2{
+        padding-top: 4rem;
+        width: 100%;
+        height:500px;
+        background-color: rgb(202, 223, 241);
+    }
+
+    .judul1{
+        color: rgb(11, 137, 255);
+        font-size: 65px;
+        margin-left: 80vh;
+        font-family: bodoni;
+        margin-top: 2rem;
+    }
+
+    .slide .right {
+      width: 50%;
+      background-color: rgb(202, 223, 241);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide .right img{
+        margin-top: 4rem;
+        margin-left: -7rem ;
+        
+    }
+
+  .bacground{
+    width: 1060px;
+    height: 1080px;
+    
+  }
+
+  .Synopsis{
+    color: rgb(11, 137, 255);
+    font-size: 26px;
+    text-align: right ;
+  
+
+  }
+   .baris{
+    color: rgb(11, 137, 255);
+    font-size: 32px;
+   }
+
+  .container2{
+    width: 590px;
+    height: 1080px;
+  
+    margin-left: 16rem;
+  }
+
+  .Written{
+    color: rgb(106, 177, 243);
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .Info{
+    color: rgb(11, 137, 255);
+    font-size: 26px;
+    margin-left: 76rem;
+    margin-top: 2rem;
+  }
+
+  .banner1{
+    width: 90%;
+    height: 600px;
+    z-index: 10;
+    margin-left: 5%;
+    margin-top: 3%;
+    
+    position: relative;
+    display: flex;
+   
+  }
+
+  .card1{
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+   margin-left: 6rem;
+  display: grid;
+  }
+
+  .card2{
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 8rem;
+  }
+
+  .card3{
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 8rem;
+    margin-right: 6rem;
+    display: grid;
+  }
+
+  .foto{
+    height: 100%;
+    width: 100%;
+  }
+
+  .nama{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 4%;
+  }
+
+  .about{
+    height: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    
+  margin-top: 33%;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#Artikel">Artikel</a></li>
+      <li><a href="#About">About</a></li>
+    </ul>
+    <h1>衣留実</h1>
+  </div>
+
+  <div class="content" id="Home">
+    
+    <img src="/Programmer/Praktek/gambar/Your Name.png" alt="" >
+  </div>
+
+  <div class="" id="Artikel"></div>
+  <div class="teks-slide">
+    <h1 class="judul1">Movie Synopsis</h1>
+  </div>
+  
+  <div class="slide" >
+    <div class="left">
+        <div class="container2">
+     
+          <p class="baris"> _________________________________</p>
+        <br><br><br>
+        <p class="Synopsis">
+       
+          Kimi no Na wa (Your Name) adalah kisah magis dan emosional tentang dua remaja yang terhubung melalui takdir. Mitsuha Miyamizu, seorang gadis desa yang bosan dengan kehidupan di kampungnya, bermimpi menjadi seorang pemuda di Tokyo. Sementara itu, Taki Tachibana, seorang siswa SMA di Tokyo, menjalani kehidupan yang sibuk sebagai pelayan restoran sambil mengejar impiannya menjadi arsitek.
+
+          Suatu hari, mereka mulai bertukar tubuh secara misterius, membuat mereka menjalani kehidupan satu sama lain. Meski awalnya bingung, mereka akhirnya bekerja sama melalui pesan untuk membantu kehidupan masing-masing. Namun, saat mereka mulai saling memahami dan tumbuh dekat, pertukaran itu tiba-tiba berhenti.
+          
+          Taki berusaha mencari Mitsuha, hanya untuk menemukan bahwa dia berasal dari masa lalu, sebelum sebuah bencana besar melanda desanya. Dengan tekad kuat, Taki berjuang melawan waktu dan takdir untuk menyelamatkan Mitsuha dan desanya.
+          
+          Film ini menggabungkan elemen fantasi, romansa, dan drama dengan visual menakjubkan, menjadikannya salah satu karya paling berkesan dari Makoto Shinkai.
+        <br><br><br>
+        <p class="Written">
+        Synopsis Written By
+        <br>
+        ChatGBT
+        </p>
+        <br><br><br>
+            </p>
+            <p class="baris"> _________________________________</p>
+        </div>
+    </div>
+    <div class="right">
+        <img src="/Programmer/Praktek/gambar/wallhaven-gj2l6d_850x1080.png" alt="">
+    </div>
+  </div>
+
+
+  <div class="teks-slide2">
+    <p class="Info">
+    26 Agustus 2016 • Drama/Romansa • 107 menit.
+    </p>
+    <div class="banner1">
+      <div class="card1">
+      <img src="/Programmer/Praktek/gambar/1_2.jpg" alt="" class="foto">
+    <p class="nama">Taki Tachibana</p>  
+    </div>
+      <div class="card2">
+        <img src="/Programmer/Praktek/gambar/Kimi no na wa __ Your Name.jpg" alt="" class="foto">
+      </div>
+      <div class="card3">
+          <img src="/Programmer/Praktek/gambar/2_2.jpg" alt="" class="foto">
+        <p class="nama">Mitsuha Miyamizu</p>
+      </div>
+
+
+    </div>
+
+
+
+    </div>
+
+
+  
+
+  <div class="content" id="About">
+    <div class="about">
+
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
